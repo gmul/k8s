@@ -1,0 +1,11 @@
+apiVersion: apps/v1 
+kind: PersistentVolumeClaim
+metadata:
+  name: storage-claim
+spec:
+    storageClassName: gold
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: Gi
